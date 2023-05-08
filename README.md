@@ -1,6 +1,6 @@
-# Workout generator with OpenAI API
+# Workout generator with OpenAI Chat API
 
-This is a workout generator app using the [OpenAI API](https://platform.openai.com/docs). It uses the [Next.js](https://nextjs.org/) framework with [React](https://reactjs.org/).
+This is a workout generator app using the [the OpenAI Chat API](https://platform.openai.com/docs). It's built with the [Next.js](https://nextjs.org/) framework.
 
 ![Text box that says generate a workout plan with an icon of a sport dumbbell](images/dumbbell.PNG)
 
@@ -17,7 +17,7 @@ Or follow the instructions below to get set up.
 3. Navigate into the project directory
 
    ```bash
-   $ cd Project_OpenAI
+   $ cd workout-generator
    ```
 
 4. Install the requirements
