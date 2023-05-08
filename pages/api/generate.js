@@ -27,12 +27,20 @@ export default async function (req, res) {
   }
 
   try {
-    const completion = await openai.createCompletion({
-      model: "text-davinci-003",
-      prompt: generatePrompt(part),
-      temperature: 0.6,
+    const completion = await openai.createChatCompletion({
+      model: "gpt-3.5-turbo",
+      messages: [
+        {
+          role: "system",
+          content:
+            "You are a well-known and talented sports coach. Each of your answers should be an workout plan even if we want to talk to you about something else.",
+        },
+        { role: "user", content: generatePrompt(part) },
+      ],
     });
-    res.status(200).json({ result: completion.data.choices[0].text });
+    res
+      .status(200)
+      .json({ result: completion.data.choices[0].message.content });
   } catch (error) {
     // Consider adjusting the error handling logic for your use case
     if (error.response) {
@@ -48,8 +56,6 @@ export default async function (req, res) {
     }
   }
 }
-
-// TODO : Convertir ça avec chat-completion + orienté sport exemple de programme
 
 function generatePrompt(part) {
   const capitalizedPart = part[0].toUpperCase() + part.slice(1).toLowerCase();

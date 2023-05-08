@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>OpenAI Quickstart</title>
+        <title>OpenAI workout plan</title>
         <link rel="icon" href="/sport.png" />
       </Head>
       <main className={styles.main}>
