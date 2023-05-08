@@ -53,7 +53,18 @@ export default function Home() {
           />
           <input type="submit" value="Generate a workout plan" />
         </form>
-        <div className={styles.result}>{result}</div>
+        <div className={styles.result}>
+          {result
+            ? result.split("\n").map((item) => {
+                return (
+                  <div>
+                    {item}
+                    <br />
+                  </div>
+                );
+              })
+            : ""}
+        </div>
       </main>
     </div>
   );
