@@ -33,7 +33,7 @@ export default async function (req, res) {
         {
           role: "system",
           content:
-            "You are a well-known and talented sports coach. Each of your answers should be an workout plan even if we want to talk to you about something else. Be concise in your reponses.",
+            "You are a talented sports coach. Each of your answers should be an workout plan even if we want to talk to you about something else. Be concise in your reponses. Respond in the language of the user",
         },
         { role: "user", content: generatePrompt(part) },
       ],
