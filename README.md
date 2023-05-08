@@ -1,8 +1,12 @@
 # Workout generator with OpenAI API
 
-This is a workout generator app used in the OpenAI API [quickstart tutorial](https://platform.openai.com/docs/quickstart). It uses the [Next.js](https://nextjs.org/) framework with [React](https://reactjs.org/). Check out the tutorial or follow the instructions below to get set up.
+This is a workout generator app using the [OpenAI API](https://platform.openai.com/docs). It uses the [Next.js](https://nextjs.org/) framework with [React](https://reactjs.org/).
 
 ![Text box that says generate a workout plan with an icon of a sport dumbbell](images/dumbbell.PNG)
+
+Find the project online at [http://46.101.222.19:3001](http://46.101.222.19:3001).
+
+Or follow the instructions below to get set up.
 
 ## Setup
 
